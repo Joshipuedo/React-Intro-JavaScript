@@ -8,8 +8,8 @@ export const CounterApp = ( { value } ) => {
   
   const handleAdd = () => {
     // console.log ('+1')
-    // setCounter( counter + 1 );
-    setCounter ( (c) => c + 1 );
+    setCounter( counter + 1 );
+    // setCounter ( (c) => c + 1 );
 
   }
 
