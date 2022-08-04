@@ -11,12 +11,25 @@
   input {
     background-color: white;
     border-radius: 5px;
-    border: 1px solid rgb(97, 32, 158);
+    border: 1px solid rgb(52, 236, 227);
     color: black;
     font-size: 1.2rem;
     outline: none;
     padding: 10px 15px;
     width: 100%;
+  }
+
+  button {
+    background-color: white;
+    color:#21232a;
+    padding: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  button:hover {
+    background-color: grey;
+    color: white;
   }
   
   h2 {
