@@ -1,8 +1,18 @@
 
-import React from 'react'
-
-export const GifGrid = () => {
+export const GifGrid = ({ category }) => {
+  
+  const gifs = [1,2,3,4,5]
+  
+  
   return (
-    <div>GifGrid</div>
+    <>
+        <h3>{ category }</h3>
+        {
+            gifs.map( gif => (
+                <p>{ gif }</p>
+            ))
+        }
+        <p>Hola perra</p>
+    </>
   )
 }
