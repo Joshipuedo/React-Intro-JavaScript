@@ -1,4 +1,4 @@
-import { Fragment, useState } from "react"
+import { useState } from "react"
 import { AddCategory } from "./components/AddCategory"
 import { GifGrid } from "./components/GifGrid"
 
@@ -18,20 +18,22 @@ export const GifExpertApp = () => {
 
   return (
     <>
-      {/* Título */}
+  
+
       <h1>GifExpertApp</h1>
-        
-      {/* Input */}
+
+
       <AddCategory 
         onNewCategory = { onAddCategory }         
       />
-  
-      {/* Listado de GIFs */}        
-      { categories.map (( category ) => (
-        <GifGrid 
-          key={ category } 
-          category={ category }  
-        />
+
+
+      { 
+        categories.map( ( category ) => (
+          
+          <GifGrid 
+            key={ category } 
+            category={ category } />
         ))
       }
       
@@ -41,3 +43,4 @@ export const GifExpertApp = () => {
     </>
   )
 }
+ 
