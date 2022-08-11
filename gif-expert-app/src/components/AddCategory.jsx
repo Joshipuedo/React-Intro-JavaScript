@@ -4,19 +4,15 @@ export const AddCategory = ({ onNewCategory }) => {
     
     const [ inputValue, setInputValue ] = useState('')
 
-    const onInputCange = ({ target }) => {
+    const onInputChange = ({ target }) => {
         setInputValue( target.value );
     }
 
     const onSubmit = ( event ) => {
-        event.preventDefault()
-
+        event.preventDefault();
         if ( inputValue.trim().length <= 1 ) return;
-
-        //setCategories( categories => [inputValue, ...categories])
-
-        onNewCategory( inputValue.trim() )
         setInputValue('')
+        onNewCategory( inputValue.trim() )
     }
     return (
         <form onSubmit={ onSubmit }>
@@ -24,9 +20,9 @@ export const AddCategory = ({ onNewCategory }) => {
                 type="text"
                 placeholder="Buscar gifs"
                 value= { inputValue }
-                onChange={ onInputCange }
+                onChange={ onInputChange }
             />
         </form>
 
-  )
+    )
 }

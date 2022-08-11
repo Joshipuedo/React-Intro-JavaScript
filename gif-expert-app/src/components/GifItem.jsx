@@ -1,7 +1,5 @@
 
-export const GifItem = ({ title, url }) => {
-
-    console.log(title,url)
+export const GifItem = ({ title, url, id }) => {
 
     return (
         <div className="card">
