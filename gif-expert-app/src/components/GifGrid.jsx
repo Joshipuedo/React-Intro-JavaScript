@@ -4,16 +4,18 @@ import { getGifs } from "../helpers/getGifs";
 
 export const GifGrid = ({ category }) => {
   
-  const [images, setImages] = useState([]);
+  const { images, isLoading } = useFetchGifs ( category );
 
-  const getImages = async() => {
-    const newImages = await getGifs( category );
-    setImages(newImages);
-  }
+  // const [images, setImages] = useState([]);
 
-  useEffect ( () => {
-    getImages();
-  }, [ ])
+  // const getImages = async() => {
+  //   const newImages = await getGifs( category );
+  //   setImages(newImages);
+  // }
+
+  // useEffect ( () => {
+  //   getImages();
+  // }, [ ])
 
   return (
     <>
